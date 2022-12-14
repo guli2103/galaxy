@@ -19,5 +19,7 @@ class ArticlePost(admin.ModelAdmin):
     list_filter = ('name',)
     list_display = ('name', 'content',)
 
+admin.site.register((Rang,Moshin,Moshin1))    
+
 
 

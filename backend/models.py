@@ -27,6 +27,29 @@ class MainPost(models.Model):
     img = models.CharField("Rasm", max_length=255)
 
     def __str__(self):
-        return self.name       
+        return self.name 
 
 
+class Rang(models.Model):
+    rangi = models.CharField(max_length=30)
+
+    def __str__(self):
+        return self.rangi             
+
+class Moshin(models.Model):
+    nomi = models.CharField(max_length=255)
+    rangi = models.ForeignKey(Rang, on_delete=models.CASCADE)
+
+
+    def __str__(self):
+        return self.nomi
+
+class Moshin1(models.Model):
+    nomi = models.CharField(max_length=255)
+    rangi = models.ForeignKey(Rang, on_delete=models.SET_NULL, null=True)
+
+    def __str__(self):
+        return self.nomi        
+        
+         
+    
