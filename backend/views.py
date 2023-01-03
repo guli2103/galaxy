@@ -16,3 +16,19 @@ def home(request):
 class AboutView(TemplateView):
     template_name = "about.html"
 
+
+class ContactView(TemplateView):
+    template_name = 'contact.html';
+
+class Index2View(TemplateView):
+    template_name = 'index-2.html';
+
+class CategoryView(TemplateView):
+    template_name = 'category.html' ; 
+
+class PostdetailsView(TemplateView):
+    template_name = 'post-details.html';
+
+class PrivacyView(TemplateView):
+    template_name = 'privacy.html';        
+
