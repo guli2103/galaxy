@@ -1,6 +1,2 @@
 # galaxy
 galaxy
-
-
-
-
